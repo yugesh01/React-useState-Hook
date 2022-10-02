@@ -4,11 +4,13 @@ import React, { useState } from 'react';
 
 export default function App() {
  const [ inputValue, setInputValue]=useState([]);
+ const [ inputValue2, setInputValue2]=useState("");
   
  const changeInput = (e)=>{
      setInputValue(e.target.value);
  }
  const buttonClick = ()=>{
+  setInputValue([...inputValue, inputValue2]);
   
  }
   
